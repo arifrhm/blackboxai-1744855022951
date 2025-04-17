@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 16 Pro - Apple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .nav-link:hover {
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        .hero-section {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-90 fixed w-full z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-12 items-center">
+                <a href="index.html" class="text-white"><i class="fab fa-apple text-xl"></i></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="iphone.html" class="text-white text-sm nav-link">iPhone</a>
+                    <a href="macbook.html" class="text-white text-sm nav-link">MacBook Pro</a>
+                    <a href="macbook-air.html" class="text-white text-sm nav-link">MacBook Air</a>
+                    <a href="ipad-pro.html" class="text-white text-sm nav-link">iPad Pro</a>
+                    <a href="ipad-air.html" class="text-white text-sm nav-link">iPad Air</a>
+                </div>
+                <div class="text-white"><i class="fas fa-search text-sm"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-center" style="background-image: url('https://images.pexels.com/photos/5750001/pexels-photo-5750001.jpeg');">
+        <div>
+            <h1 class="text-6xl font-bold mb-4">iPhone 16 Pro</h1>
+            <p class="text-2xl mb-8">Built for Apple Intelligence.</p>
+            <div class="space-x-8">
+                <a href="#specs" class="text-blue-500 hover:underline">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+                <a href="#" class="bg-blue-500 text-white px-8 py-2 rounded-full hover:bg-blue-600 transition">Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section id="specs" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center">Incredible capability.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-microchip text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">A18 Pro chip</h3>
+                    <p>The fastest chip ever in a smartphone</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-camera text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Pro camera system</h3>
+                    <p>48MP Main | Ultra Wide | Telephoto</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-battery-full text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">All-day battery life</h3>
+                    <p>Up to 29 hours video playback</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-sm text-gray-400 py-4 px-8">
+        <div class="max-w-7xl mx-auto">
+            <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

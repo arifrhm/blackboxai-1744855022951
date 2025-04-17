@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Air - Apple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .nav-link:hover {
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        .hero-section {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-90 fixed w-full z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-12 items-center">
+                <a href="index.html" class="text-white"><i class="fab fa-apple text-xl"></i></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="iphone.html" class="text-white text-sm nav-link">iPhone</a>
+                    <a href="macbook.html" class="text-white text-sm nav-link">MacBook Pro</a>
+                    <a href="macbook-air.html" class="text-white text-sm nav-link">MacBook Air</a>
+                    <a href="ipad-pro.html" class="text-white text-sm nav-link">iPad Pro</a>
+                    <a href="ipad-air.html" class="text-white text-sm nav-link">iPad Air</a>
+                </div>
+                <div class="text-white"><i class="fas fa-search text-sm"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-center bg-gradient-to-b from-blue-50 to-white">
+        <div>
+            <h1 class="text-6xl font-bold mb-4">MacBook Air</h1>
+            <p class="text-2xl mb-2 gradient-text font-semibold">Sky blue color.</p>
+            <p class="text-2xl mb-8">Sky high performance with M4.</p>
+            <div class="space-x-8">
+                <a href="#features" class="text-blue-500 hover:underline">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+                <a href="#" class="bg-blue-500 text-white px-8 py-2 rounded-full hover:bg-blue-600 transition">Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Incredibly capable. Phenomenally portable.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-feather text-4xl mb-4 text-blue-500"></i>
+                    <h3 class="text-xl font-bold mb-2">Ultralight</h3>
+                    <p class="text-gray-600">Just 2.7 pounds</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-microchip text-4xl mb-4 text-green-500"></i>
+                    <h3 class="text-xl font-bold mb-2">M4 chip</h3>
+                    <p class="text-gray-600">Revolutionary performance</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-battery-full text-4xl mb-4 text-yellow-500"></i>
+                    <h3 class="text-xl font-bold mb-2">18 hours</h3>
+                    <p class="text-gray-600">Battery life</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Strikingly thin design</h2>
+            <p class="text-xl text-gray-600 mb-12">The new MacBook Air was designed to be impossibly thin and light, yet incredibly capable.</p>
+            <div class="grid grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-6xl font-bold text-blue-500 mb-2">0.44"</h3>
+                    <p class="text-gray-600">Thin design</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-6xl font-bold text-blue-500 mb-2">2.7</h3>
+                    <p class="text-gray-600">pounds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-sm text-gray-600 py-4 px-8">
+        <div class="max-w-7xl mx-auto">
+            <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .nav-link:hover {
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        .product-section {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.3s ease;
+        }
+        .product-section:hover {
+            transform: scale(1.01);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-90 fixed w-full z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-12 items-center">
+                <a href="/" class="text-white"><i class="fab fa-apple text-xl"></i></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="iphone.html" class="text-white text-sm nav-link">iPhone</a>
+                    <a href="macbook.html" class="text-white text-sm nav-link">MacBook Pro</a>
+                    <a href="macbook-air.html" class="text-white text-sm nav-link">MacBook Air</a>
+                    <a href="ipad-pro.html" class="text-white text-sm nav-link">iPad Pro</a>
+                    <a href="ipad-air.html" class="text-white text-sm nav-link">iPad Air</a>
+                </div>
+                <div class="text-white"><i class="fas fa-search text-sm"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Sections -->
+    <main class="pt-12">
+        <!-- iPhone 16 Pro Section -->
+        <section class="product-section bg-black text-center py-20" style="background-image: url('https://images.pexels.com/photos/5750001/pexels-photo-5750001.jpeg');">
+            <h2 class="text-6xl font-bold mb-2">iPhone 16 Pro</h2>
+            <p class="text-xl mb-4">Built for Apple Intelligence.</p>
+            <div class="space-x-8">
+                <a href="iphone.html" class="text-blue-500 hover:underline">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+                <a href="#" class="text-blue-500 hover:underline">Buy <i class="fas fa-chevron-right text-xs"></i></a>
+            </div>
+        </section>
+
+        <!-- MacBook Pro Section -->
+        <section class="product-section bg-gray-100 text-center py-20 text-black" style="background-image: url('https://images.pexels.com/photos/5750000/pexels-photo-5750000.jpeg');">
+            <h2 class="text-6xl font-bold mb-2">MacBook Pro</h2>
+            <p class="text-xl mb-4">A work of smart.</p>
+            <div class="space-x-8">
+                <a href="macbook.html" class="text-blue-500 hover:underline">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+                <a href="#" class="text-blue-500 hover:underline">Buy <i class="fas fa-chevron-right text-xs"></i></a>
+            </div>
+        </section>
+
+        <!-- Grid Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+            <!-- iPad Pro -->
+            <section class="bg-white text-black rounded-2xl p-8 text-center">
+                <h3 class="text-4xl font-bold mb-2">iPad Pro</h3>
+                <p class="text-xl mb-4">Unbelievably thin. Incredibly powerful.</p>
+                <div class="space-x-8">
+                    <a href="ipad-pro.html" class="text-blue-500 hover:underline">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+                    <a href="#" class="text-blue-500 hover:underline">Buy <i class="fas fa-chevron-right text-xs"></i></a>
+                </div>
+            </section>
+
+            <!-- iPad Air -->
+            <section class="bg-white text-black rounded-2xl p-8 text-center">
+                <h3 class="text-4xl font-bold mb-2">iPad Air</h3>
+                <p class="text-xl mb-4">Now supercharged by the M3 chip.</p>
+                <div class="space-x-8">
+                    <a href="ipad-air.html" class="text-blue-500 hover:underline">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+                    <a href="#" class="text-blue-500 hover:underline">Buy <i class="fas fa-chevron-right text-xs"></i></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-sm text-gray-600 py-4 px-8">
+        <div class="max-w-7xl mx-auto">
+            <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

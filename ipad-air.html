@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad Air - Apple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .nav-link:hover {
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        .hero-section {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #86b5e5 0%, #c1e3ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-90 fixed w-full z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-12 items-center">
+                <a href="index.html" class="text-white"><i class="fab fa-apple text-xl"></i></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="iphone.html" class="text-white text-sm nav-link">iPhone</a>
+                    <a href="macbook.html" class="text-white text-sm nav-link">MacBook Pro</a>
+                    <a href="macbook-air.html" class="text-white text-sm nav-link">MacBook Air</a>
+                    <a href="ipad-pro.html" class="text-white text-sm nav-link">iPad Pro</a>
+                    <a href="ipad-air.html" class="text-white text-sm nav-link">iPad Air</a>
+                </div>
+                <div class="text-white"><i class="fas fa-search text-sm"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-center gradient-bg">
+        <div>
+            <h1 class="text-6xl font-bold mb-4">iPad Air</h1>
+            <p class="text-2xl mb-2">Now supercharged</p>
+            <p class="text-2xl mb-8">by the M3 chip.</p>
+            <div class="space-x-8">
+                <a href="#features" class="text-blue-600 hover:underline">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+                <a href="#" class="bg-blue-600 text-white px-8 py-2 rounded-full hover:bg-blue-700 transition">Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Light. Bright. Full of might.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-mobile-alt text-4xl mb-4 text-blue-500"></i>
+                    <h3 class="text-xl font-bold mb-2">10.9-inch Liquid Retina</h3>
+                    <p class="text-gray-600">Immersive display</p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-microchip text-4xl mb-4 text-green-500"></i>
+                    <h3 class="text-xl font-bold mb-2">M3 chip</h3>
+                    <p class="text-gray-600">Desktop-class performance</p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-camera text-4xl mb-4 text-purple-500"></i>
+                    <h3 class="text-xl font-bold mb-2">12MP cameras</h3>
+                    <p class="text-gray-600">Front and back</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colors Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Five gorgeous colors</h2>
+            <div class="flex justify-center space-x-8 mb-12">
+                <div class="w-12 h-12 rounded-full bg-blue-500"></div>
+                <div class="w-12 h-12 rounded-full bg-pink-500"></div>
+                <div class="w-12 h-12 rounded-full bg-purple-500"></div>
+                <div class="w-12 h-12 rounded-full bg-gray-600"></div>
+                <div class="w-12 h-12 rounded-full bg-gray-300"></div>
+            </div>
+            <p class="text-xl text-gray-600">Available in Blue, Pink, Purple, Space Gray, and Silver</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-sm text-gray-600 py-4 px-8">
+        <div class="max-w-7xl mx-auto">
+            <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
